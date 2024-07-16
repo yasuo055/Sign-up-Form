@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./fonts/Norse-Bold/norse-bold-webfont.woff2) format("woff2"),
+    url(./fonts/Norse-Bold/norse-bold-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.background-image {
+  padding: 0px;
+}
