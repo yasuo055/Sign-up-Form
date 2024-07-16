@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-</head>
-<body>
-   
-    <div class="background-image">
-      <img src="./photo/meckl-antal-XxjFXaMf1-4-unsplash.jpg" alt="">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div class="card">
+      <div class="image-container">
+        <img src="./photo/meckl-antal-XxjFXaMf1-4-unsplash.jpg" alt="/body-of-water-during-golden-hour" class="bg-image" />
+        
+        <div class="container">
+            <img src="./photo/odin-lined.png" alt="ODIN-LOGO" class="odin-logo">
+            <h1 class="logo-name">ODIN</h1>
+        </div>
+
+        <p class="credits">Photo by <span>Meckl Antal</span> on <span>Unsplash</span></p>
+            
+       
+        <div class="form-background">
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consectetur consequuntur numquam
+                    debitis a dicta doloribus veniam, omnis sunt est laudantium! Neque error,
+                    vero maiores iste voluptatibus ut quidem quia?
+                </p>
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+                <h5><em>You know you want to.</em></h5>
+            </div>
+
+          <!-- form -->
+            <form action="process.php" method="post">
+                <h5>Let's do this!</h5>
+
+                <div class="form-column">
+                    <label for="fname">first name</label>
+                    <input type="text" name="user_firstname" id="fname">
+                </div>
+
+                <div class="form-column">
+                    <label for="lname">last name</label>
+                    <input type="text" name="user_lastname" id="lname">
+                </div>
+
+                <div class="form-column">
+                    <label for="email">Email</label>
+                    <input type="email" name="user_email" id="email">
+                </div>
+
+                <div class="form-column">
+                    <label for="phone-number">first name</label>
+                    <input type="tel" name="user_phone_number" id="phone-number">
+                </div>
+
+                <div class="form-column">
+                    <label for="password">password</label>
+                    <input type="password" name="user_password" id="password">
+                </div>
+
+                <div class="form-column">
+                    <label for="con-password">confirm password</label>
+                    <input type="password" name="user_confirm_pass" id="con-password">
+                </div>
+
+                <div class="form-column">
+                    <button type="submit">Create account</button>
+                </div>
+
+                <p>Already have an account? <span><a href="login.html">login</a></span></p>
+
+            </form>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
