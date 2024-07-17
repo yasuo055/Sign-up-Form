@@ -56,11 +56,11 @@ body {
 img {
    display: block;
    max-width: 100%;
+   border-radius: 8px;
 }
 
 .image-container {
    position: relative;
-
 }
 
 .container {
@@ -111,6 +111,7 @@ span {
    position: absolute;
    right: 0px;
    top: 0px;
+   
 }
 
 .description {
@@ -161,7 +162,7 @@ label {
 input{
    width: 180px;
    height: 26px;
-   border: 1px solid #E5E7EB;
+   border: 1px solid #d1d1d1;
    border-radius: 4px;
    padding: 2px;
 }
@@ -172,11 +173,15 @@ input[type]:focus {
    outline: none;
 }
 
-input[type='password']:valid, input[type='email']:valid {
+input[type='password']:valid, input[type='email']:valid, input[type='tel']:valid {
    border: 2px solid #E5E7EB;
 }
 
 input[type='password']:invalid , input[type='email']:invalid {
+   border: 2px solid #bb2121;
+}
+
+input[type='tel']:invalid {
    border: 2px solid #bb2121;
 }
 
@@ -196,7 +201,7 @@ button:hover {
 }
 
 button:active {
-   background-color: #9D95A5;
+   background-color: #643791;
 }
 
 form p {
@@ -205,7 +210,8 @@ form p {
 
 a {
    color: #6C6078;
-   
+   font-weight: bold;
+   text-transform: capitalize;
 }
 
 a:hover {

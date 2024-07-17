@@ -47,12 +47,12 @@
            
             <div class="form-column">
               <label for="fname">first name</label>
-              <input type="text" name="user_firstname" id="fname" required />
+              <input type="text" name="user_firstname" id="fname"  />
             </div>
 
             <div class="form-column">
               <label for="lname">last name</label>
-              <input type="text" name="user_lastname" id="lname" required />
+              <input type="text" name="user_lastname" id="lname"  />
             </div>
 
             <div class="form-column">
@@ -62,7 +62,7 @@
 
             <div class="form-column">
               <label for="phone-number">contact number</label>
-              <input type="tel" name="user_phone_number" id="phone-number">
+              <input type="tel" name="user_phone_number" id="phone-number" pattern="[0-9]*" required onkeyup="restrictInput(this)"  onkeypress="return isNumberKey(event)" />
             </div>
 
             <div class="form-column">
@@ -89,6 +89,28 @@
       </div>
     </div>
   </div>
+
+
+  <script>
+
+    function restrictInput(input) {
+      let currentValue = input.value;
+
+      if (currentValue.length > 11) {
+          input.value = currentValue.substring(0, 11);
+      }
+    }
+
+    function isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+
+    if (charCode != 8 && charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+      return true;
+    }
+
+  </script>
 </body>
 
 </html>
