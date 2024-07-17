@@ -19,10 +19,20 @@
 
 h1, h2, h3, h4, h5, h6 {
    overflow-wrap: break-word;
-   margin: 0;
+   margin: 0px;
+}
+
+em , h4 {
+   font-weight: 600;
+   margin-left: 12px;
+}
+
+p + p{
+   margin-bottom: 12px;
 }
 
 body {
+   font-family: Arial, Helvetica, sans-serif;
    line-height: 1.5;
    -webkit-font-smoothing: antialiased;
    background-color: rgb(218, 225, 230);
@@ -95,11 +105,96 @@ span {
    background-color: #e7eaee;
    width: 506px;
    height: 599px;
+   padding: 64px 0px;
    position: absolute;
    right: 0px;
    top: 0px;
 }
 
+.description {
+   max-inline-size: 60ch;
+}
+
+.description p:nth-child(1n) {
+   font-weight: 600;
+   margin-left: 12px;
+}
+
+h4 {
+   padding: 12px 12px 0px; 
+   margin: 0;
+   color: #474F5B;
+}
+
+.bg-color {
+   background-color: #fff;
+   width: 100%;
+}
+
+.container-form {
+   display: flex;
+   flex-wrap: wrap;
+   width: 400px;
+   gap: 12px;
+   padding: 12px 12px 18px;
+}
+
+label {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 10.50px;
+   font-weight: 550;
+   text-align: left;
+   text-transform: uppercase;
+   display: block;
+   color: #474F5B;
+}
+
+input {
+   width: 150px;
+   height: 24px;
+   border: 1px solid #CECAD2;
+   border-radius: 4px;
+   padding: 2px;
+}
+
+input::before {
+   padding: 4px;
+}
+
+input::after {
+   border: 1px solid #474F5B;
+}
+
+button {
+   padding: 12px 24px;
+   margin: 16px 12px 12px;
+   background-color: #6C6078;
+   border: 0px;
+   border-radius: 4px;
+   color: #fff;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #9D95A5;
+}
+
+button:active {
+   background-color: #9D95A5;
+}
+
+form p {
+   margin-left: 12px;
+}
+
+a {
+   color: #6C6078;
+   
+}
+
+a:hover {
+   color: #9D95A5;
+}
 
 
 /* MEDIA QUERIES */
