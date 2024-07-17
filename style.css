@@ -28,7 +28,6 @@ em , h4 {
 }
 
 p + p{
-   
    margin-bottom: 8px;
 }
 
@@ -46,10 +45,11 @@ body {
 }
 
 .card {
+   border-radius: 32px;
    background-color: rgb(192, 191, 207);
    width: 800px;
    height: auto;
-   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+   box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.20);
    flex: 0 0 auto;
 }
 
@@ -76,7 +76,7 @@ img {
 }
 
 .odin-logo {
-   width: 35%;
+   width: 20%;
    height: auto;
    display: inline;
 }
@@ -94,7 +94,7 @@ img {
    color: #fff;
    opacity: 0.8;
    bottom: 0px;
-   margin-left: 25px;
+   margin-left: 34px;
    margin-bottom: 8px;
    position: absolute;
 }
@@ -138,7 +138,7 @@ h4 {
 .bg-color {
    background-color: rgb(255 255 255) ;
    width: 100%;
-   box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.15);
+   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.20);
 }
 
 .container-form {
@@ -158,20 +158,26 @@ label {
    color: #474F5B;
 }
 
-input {
+input{
    width: 180px;
    height: 26px;
-   border: 1px solid #CECAD2;
+   border: 1px solid #E5E7EB;
    border-radius: 4px;
    padding: 2px;
 }
 
-input::before {
-   padding: 4px;
+input[type]:focus {
+   border: 2px solid #1659c5 !important;
+   box-shadow: 5px 0px 32px 5px rgba(0, 0, 0, 0.15);
+   outline: none;
 }
 
-input:focus {
-   border: 2px solid #474F5B;
+input[type='password']:valid, input[type='email']:valid {
+   border: 2px solid #E5E7EB;
+}
+
+input[type='password']:invalid , input[type='email']:invalid {
+   border: 2px solid #bb2121;
 }
 
 button {
