@@ -28,11 +28,13 @@ em , h4 {
 }
 
 p + p{
-   margin-bottom: 12px;
+   
+   margin-bottom: 8px;
 }
 
 body {
    font-family: Arial, Helvetica, sans-serif;
+   font-size: 14px;
    line-height: 1.5;
    -webkit-font-smoothing: antialiased;
    background-color: rgb(218, 225, 230);
@@ -102,33 +104,41 @@ span {
 }
 
 .form-background {
-   background-color: #e7eaee;
+   background-color: #F9FAFB;
    width: 506px;
-   height: 599px;
-   padding: 64px 0px;
+   height: 100%;
+   padding: 48px 0px;
    position: absolute;
    right: 0px;
    top: 0px;
 }
 
 .description {
-   max-inline-size: 60ch;
+   max-inline-size: 57ch;
 }
 
-.description p:nth-child(1n) {
+.description p:nth-child(1) {
    font-weight: 600;
    margin-left: 12px;
+   margin-bottom: 14px;
+}
+
+h5 {
+   margin-bottom: 18px;
+   font-size: 14px;
 }
 
 h4 {
+   font-size: 16px;
    padding: 12px 12px 0px; 
    margin: 0;
    color: #474F5B;
 }
 
 .bg-color {
-   background-color: #fff;
+   background-color: rgb(255 255 255) ;
    width: 100%;
+   box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.15);
 }
 
 .container-form {
@@ -140,7 +150,6 @@ h4 {
 }
 
 label {
-   font-family: Arial, Helvetica, sans-serif;
    font-size: 10.50px;
    font-weight: 550;
    text-align: left;
@@ -150,8 +159,8 @@ label {
 }
 
 input {
-   width: 150px;
-   height: 24px;
+   width: 180px;
+   height: 26px;
    border: 1px solid #CECAD2;
    border-radius: 4px;
    padding: 2px;
@@ -161,18 +170,19 @@ input::before {
    padding: 4px;
 }
 
-input::after {
-   border: 1px solid #474F5B;
+input:focus {
+   border: 2px solid #474F5B;
 }
 
 button {
    padding: 12px 24px;
-   margin: 16px 12px 12px;
+   margin: 24px 12px 18px;
    background-color: #6C6078;
    border: 0px;
    border-radius: 4px;
    color: #fff;
    cursor: pointer;
+   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
 }
 
 button:hover {
